@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORTAL KOMBAT</title>
+    <link rel="shortcut icon" href="img/shortcut-site-image.svg" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="header">
+      <a href="#" class="logo">
+      <img src="img/logo.svg" alt="Логотип: КиноПульс" class="logo-image">
+      </a>
+    <a href="#" class="user">
+        <span class="user-name">Никита</span>
+        <img src="img/avatar.jpg" alt="avatar" class="user-photo">
+    </a>
+    </header>
+
+    <div class="container">
+    <section class="film">      
+      <img src="img/film-logo.png" alt="MORTAL KOMBAT" class="film-logo">
+      <div class="tags">
+       <span class="data">2021</span>
+       <spin class="genre">боевик, фэнтези, фантастика</spin>
+       <spin class="coutry">США</spin>
+       <spin class="age">18+</spin>
+    </div>
+    <p class="description">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший</p>   
+    <div class="button-group">
+      <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="button button-primary">Предзаказ фильма</a>
+      <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button button-default">
+        <img src="img/vector.svg" alt="icon: play" class="button-icon">
+        <span class="button-text">Смотреть трейлер</span>
+      </a>    
+    </div>
+    </section>
+    </div>
+  </div>
+  <div style="display: none;" id="animatedModal" class="animated-modal">
+      <h2>Mortal Kombat</h2>
+      <p>2021 боевик,фентези,фантастика США</p>
+    <form action="#" method="POST" name="order" class="order">
+      <input type="text" name="Surname" placeholder="Surname..." required>
+      <input type="email" name="mail" placeholder="Email..." required>
+      <input type="text" name="Phone number" placeholder="Phone number..." required>
+      <button class="button button-primary" style="width:100%; padding: 5px 0;">Подписаться</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>   
+</body>
+</html>
